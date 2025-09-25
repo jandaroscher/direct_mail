@@ -9,7 +9,7 @@
 	<f:variable name="lll" value="LLL:EXT:direct_mail/Resources/Private/Language/locallang_mod2-6.xlf:" />
 	<h1><f:translate key="{lll}header_mailer" /></h1>
     <h3><f:translate key="{lll}dmail_mailerengine_status" /></h3>
-    <f:render arguments="{tasks: tasks, errorClasses: errorClasses}" section="Scheduler" />
+    <f:render arguments="{tasks: tasks, errorClasses: errorClasses, dateFormat: dateFormat}" section="Scheduler" />
 
 	<f:if condition="{invoke}">
 		<h3><f:translate key="{lll}dmail_mailerengine_manual_invoke" /></h3>
